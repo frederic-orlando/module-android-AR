@@ -36,3 +36,16 @@ dependencies {
 
     implementation "com.google.ar.sceneform.ux:sceneform-ux:1.5.0"
 }
+
+apply plugin: 'com.google.ar.sceneform.plugin'
+
+//sceneform.asset('sampledata/desk.obj',
+//        'default',
+//        'sampledata/desk.sfa',
+//        'src/main/assets/desk',
+//        ['sampledata/desk.obj'])
+sceneform.asset('sampledata/couch.fbx',
+        'default',
+        'sampledata/couch.sfa',
+        'src/main/assets/couch',
+        ['sampledata/couch.fbx'])

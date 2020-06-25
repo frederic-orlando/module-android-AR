@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         arFragment = (ArFragment) getSupportFragmentManager().findFragmentById(R.id.ux_fragment);
 
         ModelRenderable.builder()
-                .setSource(this, Uri.parse("Desk.sfb"))
+                .setSource(this, Uri.parse("couch.sfb"))
                 .build()
                 .thenAccept(renderable -> modelRenderable = renderable)
                 .exceptionally(throwable -> {
